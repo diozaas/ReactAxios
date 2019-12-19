@@ -1,0 +1,2 @@
+install add on allow cors,
+cari di chrome store atau firefox store
