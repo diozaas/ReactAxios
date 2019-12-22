@@ -1,5 +1,5 @@
 import axios from 'axios'
 
 export default axios.create({
-	baseURL : "http://localhost/toko_api/"
+	baseURL : "http://localhost:8090/tokoAPI/"
 })
