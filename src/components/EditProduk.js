@@ -32,7 +32,7 @@ export class EditProduk extends Component {
     handlerSubmit = async (event) =>{
 		event.preventDefault();
 		// console.log(this.state);
-		await API.post('adddata.php', this.state)
+		await API.put('prosesEdit.php', this.state)
 		this.props.history.push('/')
 	}
 

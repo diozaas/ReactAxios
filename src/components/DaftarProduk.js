@@ -9,7 +9,7 @@ export class DaftarProduk extends Component{
 		produk:[]
 	}
 
-	async componentDidMount(){
+	componentDidMount= async() =>{
 		// await axios.get("http://localhost/toko_api/ambildata.php", { crossdomain: true })
 		await API.get("ambildata.php", { crossdomain: true })
 		.then(response=>this.setState({
@@ -22,7 +22,7 @@ export class DaftarProduk extends Component{
 	render() {
 		const renderData = this.state.produk.map(produk => {
 			return (
-				<CardProduk produk={produk} key={produk.id}/>
+				<CardProduk produk={produk} key={produk.id} refresh={this.componentDidMount}/>
 			)
 		})
 
